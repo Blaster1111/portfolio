@@ -5,11 +5,7 @@ import {
   SiNextdotjs,
   SiFlask,
 } from "react-icons/si";
-import {
-  FramerMotionIcon,
-  ReactRouterDomIcon,
-  VitePwaIcon,
-} from "@/components/icons";
+
 import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
 // Languages
@@ -26,7 +22,6 @@ import TerraformSvg from "@/public/icons/Terraform.svg";
 
 // Libraries
 import ReactjsSvg from "@/public/icons/reactjs.svg";
-import ReduxSvg from "@/public/icons/redux.svg";
 import TailwindcssSvg from "@/public/icons/tailwindcss.svg";
 import ViteSvg from "@/public/icons/vite.svg";
 import FlutterSvg from "@/public/icons/Flutter.svg";
@@ -89,7 +84,7 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Dart",
         icon: DartSvg,
       },
-            {
+      {
         name: "Terraform",
         icon: TerraformSvg,
       },
@@ -196,7 +191,7 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
       {
         name: "Jira",
         icon: JiraSvg,
-      }
+      },
     ],
   },
 ];

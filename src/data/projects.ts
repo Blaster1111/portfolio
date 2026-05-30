@@ -1,7 +1,5 @@
 import { type ProjectCardProps } from "@/components/projects/project-card";
 import { type ProjectShowcaseListItem } from "@/components/projects/project-showcase-list";
-import { siteMetadata } from "@/data/siteMetaData.mjs";
-
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   {
     index: 0,
@@ -17,8 +15,7 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
     index: 1,
     title: "Sync Write",
     href: "/projects",
-    tags: [
-    ],
+    tags: [],
     image: {
       LIGHT: "/images/projects/synwrite.webp",
       DARK: "/images/projects/syncwrite.webp",
@@ -90,10 +87,8 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
   },
   {
     name: "Blog Website",
-    favicon: "/images/projects/logos/blog.ico",
-    imageUrl: [
-      "/images/projects/blog.webp",
-    ],
+    favicon: "/images/projects/logos/jsontree.ico",
+    imageUrl: ["/images/projects/blog.webp"],
     description:
       "A simple yet elegant blog platform enabling users to connect, share ideas, and engage through compelling articles. Features user authentication, article creation, commenting system, and community engagement. Built with Next.js for frontend and Node.js backend for optimal performance.",
     sourceCodeHref: "https://github.com/Blaster1111/BlogNextNode",

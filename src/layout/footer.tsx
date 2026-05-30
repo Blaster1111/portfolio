@@ -16,9 +16,7 @@ export default function Footer() {
           target="_blank"
           className="mb-6 cursor-pointer text-center text-2xl font-bold underline sm:text-4xl lg:text-6xl"
         >
-          <span className="whitespace-nowrap">
-  rudrashukla0711@gmail.com
-</span>
+          <span className="whitespace-nowrap">rudrashukla0711@gmail.com</span>
         </a>
         <div className="flex justify-center">
           <ContactButton />
