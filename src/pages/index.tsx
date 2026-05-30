@@ -10,6 +10,7 @@ import { PROJECT_SHOWCASE } from "@/data/projects";
 import { SKILLS_DATA } from "@/data/skills";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
+
 export default function Home() {
   return (
     <>
