@@ -9,7 +9,6 @@ import ProjectShowcase from "@/components/projects/project-showcase";
 import { PROJECT_SHOWCASE } from "@/data/projects";
 import { SKILLS_DATA } from "@/data/skills";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
-import Achievements from "@/components/achievements";
 
 export default function Home() {
   return (
@@ -45,7 +44,6 @@ export default function Home() {
       <LandingHero />
       <SkillsShowcase skills={SKILLS_DATA} />
       <ProjectShowcase projects={PROJECT_SHOWCASE} />
-      <Achievements />
     </>
   );
 }
