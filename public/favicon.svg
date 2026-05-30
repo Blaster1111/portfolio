@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="200" fill="#18181b" rx="40"/>
+  
+  <!-- Subtle grid background -->
+  <g opacity="0.05" stroke="#06b6d4" stroke-width="1">
+    <line x1="40" y1="0" x2="40" y2="200"/>
+    <line x1="80" y1="0" x2="80" y2="200"/>
+    <line x1="120" y1="0" x2="120" y2="200"/>
+    <line x1="160" y1="0" x2="160" y2="200"/>
+  </g>
+  
+  <!-- Main R letter with geometric style -->
+  <g filter="url(#glow)">
+    <!-- R vertical line -->
+    <rect x="55" y="40" width="12" height="120" fill="url(#mainGrad)" rx="6"/>
+    
+    <!-- R top curve -->
+    <path d="M 67 40 Q 95 40 95 65 Q 95 80 80 85" stroke="url(#mainGrad)" stroke-width="12" fill="none" stroke-linecap="round"/>
+    
+    <!-- R diagonal leg -->
+    <line x1="75" y1="85" x2="105" y2="155" stroke="url(#mainGrad)" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Accent dots -->
+    <circle cx="115" cy="50" r="5" fill="#06b6d4"/>
+    <circle cx="125" cy="70" r="4" fill="#0891b2"/>
+    <circle cx="120" cy="150" r="5" fill="#06b6d4"/>
+  </g>
+</svg>
